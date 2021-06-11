@@ -1,0 +1,43 @@
+{
+    "name": "adgoal-common/fault-folerance-bundle",
+    "type": "library",
+    "description": "Adgoal FaultToleranceBundle common library",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.3",
+        "adgoal/broadway-saga": "^0.9",
+        "adgoal-common/fault-folerance": "^4.0"
+    },
+    "require-dev": {
+        "jakub-onderka/php-console-highlighter": "^0.4",
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "mockery/mockery": "^1.2",
+        "phan/phan": "4.0.*",
+        "php-coveralls/php-coveralls": "^2.4",
+        "phpmd/phpmd": "^2.6",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-mockery": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12",
+        "phpunit/phpunit": "^8.0",
+        "roave/security-advisories": "dev-master",
+        "sensiolabs-de/deptrac-shim": "^0.12.0",
+        "symplify/easy-coding-standard": "8.3.*",
+        "vimeo/psalm": "^4.7"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "AdgoalCommon\\FaultToleranceBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdgoalCommon\\FaultToleranceBundle\\Tests\\Unit\\": "tests/unit"
+        }
+    }
+}

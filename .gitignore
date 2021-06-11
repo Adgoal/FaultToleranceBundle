@@ -1,0 +1,25 @@
+vendor/
+
+###> PhpStorm project profile ###
+.idea/
+###< PhpStorm project profile ###
+
+###> phpunit/phpunit ###
+phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> friendsofphp/php-cs-fixer ###
+.php_cs.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> squizlabs/php_codesniffer ###
+.phpcs-cache
+###< squizlabs/php_codesniffer ###
+
+###> sensiolabs-de/deptrac ###
+.deptrac.cache
+###< sensiolabs-de/deptrac ###
+
+composer.lock
+.env.*

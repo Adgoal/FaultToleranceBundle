@@ -1,0 +1,5 @@
+includes:
+	- vendor/phpstan/phpstan-mockery/extension.neon
+parameters:
+	ignoreErrors:
+		- "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder(.*)$#"

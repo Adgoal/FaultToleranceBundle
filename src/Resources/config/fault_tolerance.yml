@@ -1,0 +1,29 @@
+services:
+
+  DeepCopy\DeepCopy: ~
+
+  AdgoalCommon\FaultTolerance\RedisAlerting\AlertingStorageFaultTolerantRepository:
+    arguments:
+      - '@Redis'
+      - { host: '%redis.host%', port: '%redis.port%' }
+
+  enqueue.client.consume_command:
+    class: 'Enqueue\Symfony\Client\ConsumeCommand'
+    arguments:
+      - '@enqueue.locator'
+      - '%enqueue.default_client%'
+      - 'fault_tolerance.enqueue.client.%s.queue_consumer'
+      - 'enqueue.client.%s.driver'
+      - 'enqueue.client.%s.delegate_processor'
+    tags:
+      - { name: 'console.command' }
+
+  AdgoalCommon\FaultTolerance\RabbitEnqueue\QueueFaultTolerantExtensionRetry:
+    autowire: true
+    tags:
+      - { name: 'enqueue.consumption.extension', priority: 10 }
+
+  AdgoalCommon\FaultTolerance\CircuitBreaker\CircuitBreakerInterface:
+    class: AdgoalCommon\FaultTolerance\CircuitBreaker\CircuitBreaker
+    autowire: true
+    shared: true
