@@ -4,8 +4,8 @@ FaultToleranceBundle
 [![Build Status](https://travis-ci.com/Adgoal/FaultToleranceBundle.svg?branch=master)](https://travis-ci.com/Adgoal/FaultToleranceBundle)
 [![Coverage Status](https://coveralls.io/repos/github/Adgoal/FaultToleranceBundle/badge.svg?branch=master)](https://coveralls.io/github/Adgoal/FaultToleranceBundle?branch=master)
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/adgoal-common/fault-folerance-bundle.svg)](https://packagist.org/packages/adgoal-common/fault-folerance-bundle)
-[![Packagist PHP version](https://img.shields.io/packagist/php-v/adgoal-common/fault-folerance-bundle.svg)](https://packagist.org/packages/adgoal-common/fault-folerance-bundle)
+[![Latest Stable Version](https://img.shields.io/packagist/v/adgoal-common/fault-tolerance-bundle.svg)](https://packagist.org/packages/adgoal-common/fault-tolerance-bundle)
+[![Packagist PHP version](https://img.shields.io/packagist/php-v/adgoal-common/fault-tolerance-bundle.svg)](https://packagist.org/packages/adgoal-common/fault-tolerance-bundle)
 
 
 

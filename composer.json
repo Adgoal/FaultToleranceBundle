@@ -1,12 +1,12 @@
 {
-    "name": "adgoal-common/fault-folerance-bundle",
+    "name": "adgoal-common/fault-tolerance-bundle",
     "type": "library",
     "description": "Adgoal FaultToleranceBundle common library",
     "license": "proprietary",
     "require": {
         "php": "^7.3",
         "adgoal/broadway-saga": "^0.9",
-        "adgoal-common/fault-folerance": "^4.0"
+        "adgoal-common/fault-tolerance": "^4.0"
     },
     "require-dev": {
         "jakub-onderka/php-console-highlighter": "^0.4",
